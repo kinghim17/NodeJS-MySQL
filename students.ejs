@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Students list</title>
+</head>
+<body>
+    <h1>
+        Students list
+    </h1>
+    <table border="1" width="100%">
+        <tr>
+            <th>S.no</th>
+            <th>Name</th>
+            <th>E.mail</th>
+            <th>Mobile No</th>
+            <th>Actions</th> <!-- this is used by adding actions-->
+        </tr>
+        <%  if(students.length > 0){ %>
+            <%  for(var i=0;i<students.length;i++){ %>
+                <tr>
+                    <td><%- students[i].id %></td>
+                    <td><%- students[i].name %></td>
+                    <td><%- students[i].email %></td>
+                    <td><%- students[i].mno %></td>
+                    <td>
+                        <a href="/delete-student?id= <%- students[i].id %>">Delete</a>
+                        <a href="/update-student?id= <%- students[i].id %>">Update</a>
+                    </td>
+                </tr>
+            <%  } %>   
+        <% }else{ %> 
+            <h1>students data not found</h1>
+        <% } %>    
+    </table>
+</body>
+</html>

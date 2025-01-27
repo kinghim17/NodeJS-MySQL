@@ -4,7 +4,15 @@ What is EJS?
 EJS (Embedded JavaScript) is a simple templating language that allows you to generate HTML pages dynamically.
  It integrates seamlessly with Node.js and is commonly used with Express for rendering HTML views with dynamic data.
 EJS files typically use the .ejs file extension and allow you to embed JavaScript code within HTML templates.
-2:
+2:Timeline
+basic.js
+basic2.js
+insert
+send/select
+delete
+update
+search
+
 3:
 4:
 5:

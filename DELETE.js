@@ -55,5 +55,6 @@ app.get('/delete-student',function(req,res){
     });
 });
 
-
+//add everything from here
 app.listen(7000);
+
